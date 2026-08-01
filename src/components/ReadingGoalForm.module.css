@@ -1,12 +1,4 @@
-.app-shell {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background: #f6f1ea;
-  padding: 2rem;
-}
-
-form {
+.form {
   width: min(100%, 540px);
   background: #fffdfb;
   border: 1px solid #e7d8c7;
@@ -15,7 +7,7 @@ form {
   box-shadow: 0 12px 30px rgba(68, 40, 23, 0.08);
 }
 
-form > div {
+.fieldGroup {
   margin-bottom: 1.25rem;
 }
 
@@ -40,13 +32,19 @@ input:focus {
   outline-offset: 2px;
 }
 
-p[role="alert"] {
+.errorText {
   margin: 0.45rem 0 0;
   color: #9d2f2f;
   font-size: 0.9rem;
 }
 
-button {
+.summary {
+  margin: 1.2rem 0;
+  color: #4d3b2d;
+  font-weight: 600;
+}
+
+.button {
   border: none;
   border-radius: 10px;
   background: #8b5e3c;
@@ -56,12 +54,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   background: #734d30;
 }
 
-[aria-live="polite"] {
-  margin: 1.2rem 0;
-  color: #4d3b2d;
+.successText {
+  margin-top: 0.8rem;
+  color: #1d6b4f;
   font-weight: 600;
 }
